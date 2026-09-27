@@ -1,0 +1,35 @@
+# Runtime dependencies.
+#
+# No Ollama, no transformers, no cloud SDK: there is no language model in this
+# application. Everything below runs locally and offline once installed.
+#
+# Stockfish is a SYSTEM binary, not a Python package:
+#     brew install stockfish        (macOS)
+#     sudo apt install stockfish    (Debian/Ubuntu)
+#
+# Two pins below are NOT simply "the latest". Both are explained where they
+# appear, because both look like mistakes otherwise and someone will
+# eventually "fix" them. Run `python tools/check_requirements.py` to confirm
+# every pin has a wheel for your machine before installing.
+
+chess==1.11.2            # game logic. NOTE: GPL-3.0-or-later -- see NOTICE
+ohbot==4.0.18            # robot control
+pyserial==3.5            # ohbot dependency
+sounddevice==0.5.6       # microphone capture
+
+# numpy 2.5 and later require Python 3.12. This project targets 3.11 and 3.12,
+# so it pins the newest release that still supports both.
+numpy==2.4.6
+
+# NOT 0.3.45. That release ships wheels for Linux, ARM and Windows only -- it
+# has NO macOS wheel of any kind, so pip on a Mac reports "no matching
+# distribution" and lists 0.3.44 as the newest it can see. 0.3.44 has wheels
+# for every platform, including macOS universal2.
+vosk==0.3.44
+
+# MUST be >= 1.3.0. Versions 1.1 and 1.2 depend on a separate piper-phonemize
+# package with no macOS wheel, so installing them on a Mac fails outright.
+# From 1.3.0 espeak-ng is embedded. piper-tts pulls onnxruntime in itself, so
+# that does not need listing here.
+# Project moved to OHF-Voice/piper1-gpl and is GPL-3.0-or-later -- see NOTICE.
+piper-tts==1.7.0

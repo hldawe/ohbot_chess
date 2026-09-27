@@ -1,0 +1,2 @@
+{"at": "2026-09-24T08:02:55+00:00", "monotonic": 134613.031, "kind": "start", "level": "kitten", "child_plays": "white", "teach": true, "speech": false, "mock": false, "seed": null, "White": "Player", "Black": "Ohbot"}
+{"at": "2026-09-24T08:03:17+00:00", "monotonic": 134635.108, "kind": "finish", "result": "unfinished", "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"}

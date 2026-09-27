@@ -1,0 +1,9 @@
+{"at": "2026-09-25T09:04:21+00:00", "monotonic": 152643.943, "kind": "start", "level": "cub", "child_plays": "white", "teach": true, "speech": true, "mock": false, "seed": null, "White": "Player", "Black": "Ohbot"}
+{"at": "2026-09-25T09:04:40+00:00", "monotonic": 152663.192, "kind": "input", "who": "child", "raw": "[unk] to a two", "parsed": "illegal", "move": null, "normalised": "a2"}
+{"at": "2026-09-25T09:04:47+00:00", "monotonic": 152670.199, "kind": "input", "who": "child", "raw": "a three", "parsed": "move", "move": "a2a3", "normalised": "a3"}
+{"at": "2026-09-25T09:04:50+00:00", "monotonic": 152672.888, "kind": "move", "who": "child", "san": "a3", "uci": "a2a3", "fen": "rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq - 0 1", "spoken": "pawn on a two to a three"}
+{"at": "2026-09-25T09:04:55+00:00", "monotonic": 152677.661, "kind": "move", "who": "ohbot", "san": "d5", "uci": "d7d5", "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 2", "spoken": "pawn on d seven to d five"}
+{"at": "2026-09-25T09:05:12+00:00", "monotonic": 152695.152, "kind": "input", "who": "child", "raw": "[unk] two e four", "parsed": "move", "move": "e2e4", "normalised": "2 e4"}
+{"at": "2026-09-25T09:05:15+00:00", "monotonic": 152698.137, "kind": "move", "who": "child", "san": "e4", "uci": "e2e4", "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/P7/1PPP1PPP/RNBQKBNR b KQkq - 0 2", "spoken": "pawn on e two to e four"}
+{"at": "2026-09-25T09:05:21+00:00", "monotonic": 152704.43, "kind": "move", "who": "ohbot", "san": "dxe4", "uci": "d5e4", "fen": "rnbqkbnr/ppp1pppp/8/8/4p3/P7/1PPP1PPP/RNBQKBNR w KQkq - 0 3", "spoken": "pawn on d five takes the pawn on e four"}
+{"at": "2026-09-25T09:05:34+00:00", "monotonic": 152717.275, "kind": "finish", "result": "unfinished", "fen": "rnbqkbnr/ppp1pppp/8/8/4p3/P7/1PPP1PPP/RNBQKBNR w KQkq - 0 3"}

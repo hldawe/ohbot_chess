@@ -1,0 +1,15 @@
+[Event "ohbot_chess"]
+[Site "Ohbot"]
+[Date "2026.09.27"]
+[Round "?"]
+[White "Player"]
+[Black "Ohbot"]
+[Result "*"]
+[level "kitten"]
+[child_plays "white"]
+[teach "True"]
+[speech "False"]
+[mock "False"]
+[seed "None"]
+
+1. c4 Nc6 2. Nc3 e6 3. Nf3 g6 4. d4 h6 5. Na4 d5 6. cxd5 exd5 7. b3 a6 8. Nc3 h5 9. Nxd5 Bg7 10. Nf6+ Qxf6 11. d5 Nce7 12. Rb1 g5 13. Bb2 Qg6 14. Nxg5 Bg4 15. Nxf7 Rh6 16. Ne5 Qf5 17. Qd3 h4 18. Rc1 Rd8 19. Rxc7 b5 20. Rc3 Bxe5 21. h3 Qxd3 22. Rxd3 Rxd5 23. hxg4 Rc6 24. Bxe5 b4 25. g3 Ra5 26. Bd6 Nh6 27. Bg2 Rc1+ 28. Rd1 hxg3 29. Rxc1 Nxg4 30. Rc7 gxf2+ 31. Kd1 Ng8 32. Rh8 Nf6 33. Bc6+ Kd8 34. Bg2 Ra3 35. e4 f1=R+ 36. Bxf1 Ne8 37. Rxg8 Ra5 38. Re7 Rf5 *

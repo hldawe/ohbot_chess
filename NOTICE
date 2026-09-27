@@ -1,0 +1,59 @@
+ohbot_chess
+Copyright (C) 2026 Heather Dawe
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. See LICENSE for the full text.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+---------------------------------------------------------------------------
+Why GPL-3.0
+---------------------------------------------------------------------------
+
+python-chess is GPL-3.0-or-later and is imported directly by this project, so
+what is distributed here is a derivative work and carries the same terms.
+
+Stockfish is also GPL-3.0, but is invoked as a separate binary over UCI rather
+than linked. Running a program is not linking to it, so Stockfish imposes no
+obligation on this code. It is listed below for completeness, not because it
+determined the licence.
+
+---------------------------------------------------------------------------
+Third-party components
+---------------------------------------------------------------------------
+
+This project depends on, but does not redistribute, the following. Each is
+governed by its own licence, which is not superseded by the licence above.
+
+  python-chess     GPL-3.0-or-later -- game logic, move generation, SAN
+                   https://github.com/niklasf/python-chess
+
+  Stockfish        GPL-3.0 -- the chess engine, used as a separate binary
+                   https://github.com/official-stockfish/Stockfish
+
+  ohbot            Ohbot Ltd -- the robot control library
+                   https://github.com/ohbot/ohbot-python
+
+  Vosk             Apache-2.0 -- offline speech recognition
+                   https://github.com/alphacep/vosk-api
+
+  Piper            GPL-3.0-or-later -- offline speech synthesis
+                   https://github.com/OHF-Voice/piper1-gpl
+                   (Development moved here from rhasspy/piper, which was MIT
+                   and was archived in October 2025. The current, maintained
+                   package is GPL-3.0. Since this project is GPL-3.0 anyway
+                   that changes nothing here, but it does mean the licence
+                   cannot now be loosened without replacing Piper.)
+
+  espeak-ng        GPL-3.0 -- phonemisation, embedded in Piper since 1.3.0
+
+  numpy            BSD-3-Clause
+  sounddevice      MIT
+  pyserial         BSD-3-Clause
+
+Model files (Piper voices, Vosk models) are downloaded at setup time and are
+not included in this repository. Each carries its own licence.

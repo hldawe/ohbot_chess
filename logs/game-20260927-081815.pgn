@@ -1,0 +1,15 @@
+[Event "ohbot_chess"]
+[Site "Ohbot"]
+[Date "2026.09.27"]
+[Round "?"]
+[White "Player"]
+[Black "Ohbot"]
+[Result "*"]
+[level "cub"]
+[child_plays "white"]
+[teach "True"]
+[speech "True"]
+[mock "False"]
+[seed "None"]
+
+1. a3 c5 2. Nf3 e6 3. c3 Nc6 *

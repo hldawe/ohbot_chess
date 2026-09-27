@@ -1,0 +1,8 @@
+{"at": "2026-09-25T18:46:40+00:00", "monotonic": 171151.8, "kind": "start", "level": "cub", "child_plays": "white", "teach": true, "speech": true, "mock": false, "seed": null, "White": "Player", "Black": "Ohbot"}
+{"at": "2026-09-25T18:47:01+00:00", "monotonic": 171172.768, "kind": "input", "who": "child", "raw": "c four", "parsed": "move", "move": "c2c4", "normalised": "c4"}
+{"at": "2026-09-25T18:47:04+00:00", "monotonic": 171175.933, "kind": "move", "who": "child", "san": "c4", "uci": "c2c4", "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1", "spoken": "pawn on c two to c four"}
+{"at": "2026-09-25T18:47:09+00:00", "monotonic": 171180.61, "kind": "move", "who": "ohbot", "san": "Nc6", "uci": "b8c6", "fen": "r1bqkbnr/pppppppp/2n5/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2", "spoken": "knight on b eight to c six"}
+{"at": "2026-09-25T18:47:20+00:00", "monotonic": 171192.0, "kind": "input", "who": "child", "raw": "knight to a three", "parsed": "move", "move": "b1a3", "normalised": "N a3"}
+{"at": "2026-09-25T18:47:23+00:00", "monotonic": 171195.303, "kind": "move", "who": "child", "san": "Na3", "uci": "b1a3", "fen": "r1bqkbnr/pppppppp/2n5/8/2P5/N7/PP1PPPPP/R1BQKBNR b KQkq - 2 2", "spoken": "knight on b one to a three"}
+{"at": "2026-09-25T18:47:32+00:00", "monotonic": 171203.97, "kind": "move", "who": "ohbot", "san": "h6", "uci": "h7h6", "fen": "r1bqkbnr/ppppppp1/2n4p/8/2P5/N7/PP1PPPPP/R1BQKBNR w KQkq - 0 3", "spoken": "pawn on h seven to h six"}
+{"at": "2026-09-25T18:47:56+00:00", "monotonic": 171227.923, "kind": "finish", "result": "unfinished", "fen": "r1bqkbnr/ppppppp1/2n4p/8/2P5/N7/PP1PPPPP/R1BQKBNR w KQkq - 0 3"}

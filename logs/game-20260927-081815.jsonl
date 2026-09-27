@@ -1,0 +1,11 @@
+{"at": "2026-09-27T08:18:15+00:00", "monotonic": 190414.442, "kind": "start", "level": "cub", "child_plays": "white", "teach": true, "speech": true, "mock": false, "seed": null, "White": "Player", "Black": "Ohbot"}
+{"at": "2026-09-27T08:18:43+00:00", "monotonic": 190442.904, "kind": "input", "who": "child", "raw": "a three", "parsed": "move", "move": "a2a3", "normalised": "a3"}
+{"at": "2026-09-27T08:18:46+00:00", "monotonic": 190445.789, "kind": "move", "who": "child", "san": "a3", "uci": "a2a3", "fen": "rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq - 0 1", "spoken": "pawn on a two to a three"}
+{"at": "2026-09-27T08:18:51+00:00", "monotonic": 190450.664, "kind": "move", "who": "ohbot", "san": "c5", "uci": "c7c5", "fen": "rnbqkbnr/pp1ppppp/8/2p5/8/P7/1PPPPPPP/RNBQKBNR w KQkq - 0 2", "spoken": "pawn on c seven to c five"}
+{"at": "2026-09-27T08:19:14+00:00", "monotonic": 190473.158, "kind": "input", "who": "child", "raw": "knight to f three", "parsed": "move", "move": "g1f3", "normalised": "N f3"}
+{"at": "2026-09-27T08:19:17+00:00", "monotonic": 190476.618, "kind": "move", "who": "child", "san": "Nf3", "uci": "g1f3", "fen": "rnbqkbnr/pp1ppppp/8/2p5/8/P4N2/1PPPPPPP/RNBQKB1R b KQkq - 1 2", "spoken": "knight on g one to f three"}
+{"at": "2026-09-27T08:19:22+00:00", "monotonic": 190481.141, "kind": "move", "who": "ohbot", "san": "e6", "uci": "e7e6", "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/8/P4N2/1PPPPPPP/RNBQKB1R w KQkq - 0 3", "spoken": "pawn on e seven to e six"}
+{"at": "2026-09-27T08:19:43+00:00", "monotonic": 190502.625, "kind": "input", "who": "child", "raw": "two c three", "parsed": "move", "move": "c2c3", "normalised": "2 c3"}
+{"at": "2026-09-27T08:19:47+00:00", "monotonic": 190506.048, "kind": "move", "who": "child", "san": "c3", "uci": "c2c3", "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/8/P1P2N2/1P1PPPPP/RNBQKB1R b KQkq - 0 3", "spoken": "pawn on c two to c three"}
+{"at": "2026-09-27T08:19:52+00:00", "monotonic": 190511.268, "kind": "move", "who": "ohbot", "san": "Nc6", "uci": "b8c6", "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/8/P1P2N2/1P1PPPPP/RNBQKB1R w KQkq - 1 4", "spoken": "knight on b eight to c six"}
+{"at": "2026-09-27T08:28:29+00:00", "monotonic": 191028.04, "kind": "finish", "result": "unfinished", "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/8/P1P2N2/1P1PPPPP/RNBQKB1R w KQkq - 1 4"}

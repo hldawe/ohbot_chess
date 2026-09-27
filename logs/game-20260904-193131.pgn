@@ -1,0 +1,17 @@
+[Event "ohbot_chess"]
+[Site "Ohbot"]
+[Date "2026.09.04"]
+[Round "?"]
+[White "Player"]
+[Black "Ohbot"]
+[Result "*"]
+[level "cub"]
+[child_plays "white"]
+[teach "True"]
+[speech "False"]
+[mock "False"]
+[seed "None"]
+[FEN "r3kr2/pbppq1pp/1pn1p3/8/2BPn3/8/PPP1NPPP/R1B1Q1K1 w q - 1 13"]
+[SetUp "1"]
+
+*

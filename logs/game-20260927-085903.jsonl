@@ -1,0 +1,8 @@
+{"at": "2026-09-27T08:59:03+00:00", "monotonic": 192740.05, "kind": "start", "level": "kitten", "child_plays": "white", "teach": true, "speech": false, "mock": false, "seed": null, "White": "Player", "Black": "Ohbot"}
+{"at": "2026-09-27T08:59:21+00:00", "monotonic": 192758.857, "kind": "input", "who": "child", "raw": "g3", "parsed": "move", "move": "g2g3", "normalised": "g3"}
+{"at": "2026-09-27T08:59:24+00:00", "monotonic": 192761.812, "kind": "move", "who": "child", "san": "g3", "uci": "g2g3", "fen": "rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1", "spoken": "pawn on g two to g three"}
+{"at": "2026-09-27T08:59:29+00:00", "monotonic": 192766.561, "kind": "move", "who": "ohbot", "san": "d5", "uci": "d7d5", "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/6P1/PPPPPP1P/RNBQKBNR w KQkq - 0 2", "spoken": "pawn on d seven to d five"}
+{"at": "2026-09-27T08:59:52+00:00", "monotonic": 192789.818, "kind": "input", "who": "child", "raw": "pawn to d4", "parsed": "move", "move": "d2d4", "normalised": "P d4"}
+{"at": "2026-09-27T08:59:55+00:00", "monotonic": 192792.657, "kind": "move", "who": "child", "san": "d4", "uci": "d2d4", "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq - 0 2", "spoken": "pawn on d two to d four"}
+{"at": "2026-09-27T09:00:00+00:00", "monotonic": 192797.314, "kind": "move", "who": "ohbot", "san": "Nf6", "uci": "g8f6", "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/6P1/PPP1PP1P/RNBQKBNR w KQkq - 1 3", "spoken": "knight on g eight to f six"}
+{"at": "2026-09-27T09:07:54+00:00", "monotonic": 193271.962, "kind": "finish", "result": "unfinished", "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/6P1/PPP1PP1P/RNBQKBNR w KQkq - 1 3"}

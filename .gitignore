@@ -1,0 +1,22 @@
+# Downloaded models — fetched separately, never committed
+model/
+voices/
+models/
+*.onnx
+*.onnx.json
+
+# Virtual environment
+bin/
+lib/
+include/
+pyvenv.cfg
+.venv/
+venv/
+
+# Python cruft
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+__MACOSX/

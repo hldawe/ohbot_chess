@@ -1,0 +1,15 @@
+[Event "ohbot_chess"]
+[Site "Ohbot"]
+[Date "2026.09.06"]
+[Round "?"]
+[White "Player"]
+[Black "Ohbot"]
+[Result "*"]
+[level "kitten"]
+[child_plays "white"]
+[teach "True"]
+[speech "False"]
+[mock "False"]
+[seed "None"]
+
+1. e3 d5 2. Bb5+ Qd7 3. Bxd7+ Bxd7 4. Nc3 Nc6 5. Nxd5 Bc8 6. Nxc7+ Kd7 7. Nxa8 Kd8 8. d4 Bd7 9. e4 h5 10. e5 Bf5 *

@@ -1,0 +1,115 @@
+[project]
+name = "ohbot-chess"
+version = "1.0.0"
+description = "Chess with an Ohbot: it has no hands, so you move the pieces"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+
+# Runtime dependencies live in requirements.txt, which is the path a person
+# actually follows. This block exists so tooling can resolve the project, not
+# as a second source of truth.
+dependencies = []
+
+# GPL-3.0-or-later, because python-chess is GPL-3.0-or-later and is imported
+# rather than shelled out to, making the distributed combination a derivative
+# work. Stockfish is also GPL-3.0 but runs as a separate binary over UCI, so it
+# imposes nothing here. See NOTICE.
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pre-commit>=3.8",
+]
+
+[project.scripts]
+ohbot-chess = "ohbot_chess.cli:main"
+
+[tool.setuptools]
+packages = ["ohbot_chess"]
+
+# -- formatting and linting -------------------------------------------------
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["ohbotData", "voices", "model", ".venv"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "I",    # import sorting
+    "UP",   # pyupgrade
+    "B",    # bugbear: likely bugs
+    "SIM",  # simplifications
+    "C4",   # comprehensions
+]
+ignore = [
+    "E501",  # line length is the formatter's job, not the linter's
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tools put the repository root on sys.path before importing the package, so
+# their imports cannot come first.
+"tools/*" = ["E402"]
+# Re-exports are the whole purpose of the package __init__.
+"ohbot_chess/__init__.py" = ["F401"]
+
+# -- typing -----------------------------------------------------------------
+
+[tool.mypy]
+python_version = "3.11"
+files = ["ohbot_chess"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+warn_redundant_casts = true
+no_implicit_optional = true
+
+# These ship no type stubs. `ohbot` in particular is a third-party library we
+# cannot change, so importing it untyped is a fact of life rather than a gap
+# being left open.
+[[tool.mypy.overrides]]
+module = [
+    "ohbot.*",
+    "sounddevice.*",
+    "vosk.*",
+    "piper.*",
+    "serial.*",
+]
+ignore_missing_imports = true
+
+# -- tests ------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Hardware tests need a physically connected robot, so they are opt-in:
+#     pytest -m hardware
+addopts = "-m 'not hardware' --strict-markers"
+markers = [
+    "hardware: requires a physically connected Ohbot",
+]
+
+[tool.coverage.run]
+source = ["ohbot_chess"]
+omit = [
+    # Capture and recognition need a microphone and a 40 MB model. Everything
+    # in listener.py that decides WHAT may be recognised is pure and is tested.
+    "ohbot_chess/listener.py",
+]
+
+[tool.coverage.report]
+# Raising this should mean testing more behaviour, not adding assertions about
+# mocks. The audio and serial paths need hardware.
+fail_under = 80
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
